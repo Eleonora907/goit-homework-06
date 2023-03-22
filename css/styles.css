@@ -81,6 +81,7 @@ textarea {
 }
 
 body {
+  
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -720,11 +721,12 @@ body {
 .modal-group {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  /* height: 58px; */
+  /* gap: 5px; */
 }
 
 .modal-group:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .modal-input {
@@ -735,7 +737,7 @@ body {
   height: 40px;
   padding-left: 38px;
   padding-right: 5px;
-  font-size: 14px;
+  font-size: 12px;
   outline: transparent;
   transition: border-color var(--animation-speed);
 }
@@ -771,6 +773,8 @@ body {
   padding: 10px 20px;
   border-radius: 4px;
   outline: transparent;
+  font: inherit;
+  /* color: inherit; */
 }
 
 .modal-comments:focus {
@@ -780,6 +784,10 @@ body {
 .modal-checkbox-icon {
   fill: currentColor;
   text-align: center;
+}
+
+.modal-checkbox {
+  margin-top: 16px;
 }
 
 .modal-checkbox-custom {
