@@ -703,7 +703,7 @@ body {
 .modal-form {
   color: var(--color-light-slate);
   font-size: 12px;
-  line-height: calc(14 / 12);
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 
@@ -711,7 +711,7 @@ body {
   display: block;
   font-size: 16px;
   /* font-weight: 500; */
-  line-height: calc(24 / 16);
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-align: center;
@@ -725,8 +725,11 @@ body {
   /* gap: 5px; */
 }
 
-.modal-group:not(:last-child) {
+/* .modal-group:not(:last-child) {
   margin-bottom: 8px;
+} */
+.modal-label {
+  margin-bottom: 4px;
 }
 
 .modal-input {
@@ -760,7 +763,7 @@ body {
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   left: 16px;
   fill: var(--primary-background-color);
   transition: fill var(--animation-speed);
@@ -774,7 +777,10 @@ body {
   border-radius: 4px;
   outline: transparent;
   font: inherit;
-  /* color: inherit; */
+ 
+}
+.modal-comments::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-comments:focus {
@@ -803,7 +809,7 @@ body {
   justify-content: center;
   border: 1px solid var(--color-light-slate);
   border-radius: 2px;
-  color: transparent;
+ color: transparent; 
   transition: color var(--animation-speed), background-color var(--animation-speed);
 }
 
@@ -822,4 +828,5 @@ body {
   width: 169px;
   height: 56px;
   margin-top: 24px;
+  /* margin-bottom: 24px; */
 }
